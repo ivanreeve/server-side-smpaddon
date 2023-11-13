@@ -1,0 +1,1 @@
+replaceitem entity @a[hasitem={item=foxengine:menu,location=slot.hotbar,slot=9,quantity=0}] slot.hotbar 8 foxengine:menu 1 0 {"item_lock":{"mode":"lock_in_slot"},"keep_on_death":{}}

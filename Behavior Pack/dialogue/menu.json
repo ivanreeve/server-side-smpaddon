@@ -1,0 +1,1494 @@
+{
+  "format_version": "1.19.60",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "menu:main",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Menu"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Shop"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:shop"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Helper"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:helper"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "§oGuide"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:guide"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:shop",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Shop"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Explore wide range of items and resources to enhance your Minecraft experience."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Items"
+                }
+              ]
+            },
+            "commands": [
+              "/summon foxengine:show_entity ~~~"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Trader"
+                }
+              ]
+            },
+            "commands": [
+            	"/dialogue open @s @initiator menu:trader"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Pets"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet0"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Farm Animals"
+                }
+              ]
+            },
+            "commands": [
+              "/execute as @initiator run event entity @s check:is_in_mooshroom",
+              "/dialogue open @s @initiator[tag=is_in_mooshroom] menu:livestock_mooshroom",
+              "/dialogue open @s @initiator[tag=!is_in_mooshroom] menu:livestock_regular",
+              "/tag @initiator remove is_in_mooshroom"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:main"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "livestock_regular",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Farm Animals"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected animal's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Cow\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon cow ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Sheep\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon sheep ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Pig\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon pig ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Chicken\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon chicken ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Bee\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon bee ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "livestock_mooshroom",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Farm Animals"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected item's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Mooshroom\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon mooshroom ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Sheep\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon sheep ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Pig\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon pig ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Chicken\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon chicken ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Bee\n§23L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=3] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon bee ~~~",
+              "/xp -3L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:trader",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Trader"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": ""
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Villager\n§215L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=15] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute as @initiator[tag=valid_request] run summon villager ~~~",
+              "/xp -15L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request",
+              "/scoreboard players add @initiator staff_limit 1"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:helper",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Helper"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Helper tools are commands that make certain features possible."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Clear Lag"
+                }
+              ]
+            },
+            "commands": [
+              "/execute as @initiator run function cleardrop"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Break Bedrock"
+                }
+              ]
+            },
+            "commands": [
+              "/execute as @initiator run fill ~~2~ ~~2~ air 0 replace bedrock"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:main"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:guide",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Guide"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Greetings Player! Welcome to Cloud SMP, a small vanilla server owned by \u00a7aTerminalOx\u00a7f. Before playing, please read everything you need to know about the server.\n\nThis SMP is different from other vanilla SMPs. No hostile mobs are present, and due to this instance, the loots of the hostile mobs can be found in crafting table or through trading with non-player traders.\n\n\n\u00a7fWhat are allowed?\n\n\u00a7a-\u00a7f Xray is allowed to maximize resources\n\n\u00a7fWarning:\n\n\u00a7eAvoid loading too much overworld chunks because it can corrupt the server due to hardware limitations.\n\nThere is a world border expanding 16000x16000 blocks in the overworld and end, and 2000x2000 blocks in the nether.\n\n\u00a7aRules\u00a7f\n\n\u00a7a!\u00a7f Do not cheat.\n\n\u00a7a!\u00a7f Be friendly to other players.\n\n\u00a7a!\u00a7f Do not steal items or enter places owned by other players unless they allowed you to.\n\n\u00a7a!\u00a7f Any possession of illegal (unobtainable) items such as bedrock, portal frames, 32k weapons, unbreakable armor/blocks is \u00a7csubject to immediate banning.\n\n\u00a7a!\u00a7f Respect all players.\n\n\u00a7a!\u00a7f Creation of lag machines or large redstone contraptions are not allowed.\n\n\u00a7a!\u00a7f All farms must be away from player structures, should be built in isolated locations like end.\n\n\n\u00a7bIn-game menu:main\u00a7f\n\nThe In-game menu:main can be accessed by all players to execute commands through an item. It contains useful commands and features any players can use such as:\n\n\u00a7eUtilities:\n\n\u00a7aReload - \u00a7fClears unnecessary entities within 64-block radius.\n\n\u00a7aBreak Bedrock - \u00a7fBreaks the bedrock above the player's head. Used in removing nether ceiling.\n\n\u00a7eFeatured:\n\n\u00a7aClone Spawner - \u00a7fClones mob spawners that are placed beneath the player. Useful for increasing drop rates. Read the manual before using.\n\n\u00a7aMine Spawner -\u00a7f mines the spawner below the player. This makes mob spawners obtainable in survival.\n\n\n"
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:main"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet0",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Wolf\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon wolf ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet1"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text":"Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet0"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet1",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Horse\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon horse ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet2"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet0"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet2",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Skeleton Horse\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon skeleton_horse ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet3"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet1"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet3",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Allay\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon allay ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet4"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet2"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet4",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Cat\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon cat ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet5"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet3"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet5",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Frog\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon frog ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet6"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet4"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet6",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Panda\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon panda ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet7"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet5"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet7",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Ocelot\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon ocelot ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet8"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet6"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet8",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Parrot\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon parrot ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet9"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet7"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet9",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Polar Bear\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon polar_bear ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet10"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet8"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet10",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Goat\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon goat ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet11"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet9"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet11",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Mule\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon mule ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet12"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet10"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet12",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Donkey\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon donkey ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet13"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet11"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "menu:pet13",
+        "npc_name": {
+          "rawtext": [
+            {
+              "text": "Pets"
+            }
+          ]
+        },
+        "text": {
+          "rawtext": [
+            {
+              "text": "Press the button with your selected pet's name to buy."
+            }
+          ]
+        },
+        "buttons": [
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Dolphin\n§25L"
+                }
+              ]
+            },
+            "commands": [
+              "/tag @initiator[lm=5] add valid_request",
+              "/title @initiator[tag=!valid_request] actionbar \u00a7cYou do not have enough XP",
+              "/execute @initiator[tag=valid_request] ~~~ summon dolphin ~~~",
+              "/xp -5L @initiator[tag=valid_request]",
+              "/tag @initiator remove valid_request"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Next"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet13"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "Back"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator menu:pet12"
+            ]
+          },
+          {
+            "name": {
+              "rawtext": [
+                {
+                  "text": "< Close >"
+                }
+              ]
+            },
+            "commands": [
+              "/dialogue open @s @initiator shop"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

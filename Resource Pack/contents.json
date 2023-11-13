@@ -1,0 +1,689 @@
+{
+   "content" : [
+      {
+         "path" : "ui/trade_2_screen_pocket.json"
+      },
+      {
+         "path" : "ui/npc_interact_screen.json"
+      },
+      {
+         "path" : "ui/hud_screen.json"
+      },
+      {
+         "path" : "textures/ui/wither_effect.png"
+      },
+      {
+         "path" : "textures/ui/shift_tab_icon.png"
+      },
+      {
+         "path" : "textures/ui/regeneration_effect.png"
+      },
+      {
+         "path" : "textures/ui/poison_effect.png"
+      },
+      {
+         "path" : "textures/ui/night_vision_effect.png"
+      },
+      {
+         "path" : "textures/ui/nausea_effect.png"
+      },
+      {
+         "path" : "textures/ui/mining_fatigue_effect.png"
+      },
+      {
+         "path" : "textures/ui/item_lock_red.png"
+      },
+      {
+         "path" : "textures/ui/invisibility_effect.png"
+      },
+      {
+         "path" : "textures/ui/haste_effect.png"
+      },
+      {
+         "path" : "textures/ui/fire_resistance_effect.png"
+      },
+      {
+         "path" : "textures/ui/down_icon.png"
+      },
+      {
+         "path" : "textures/ui/blindness_effect.png"
+      },
+      {
+         "path" : "textures/trims/wild_leggings.png"
+      },
+      {
+         "path" : "textures/blocks/glowstone.png"
+      },
+      {
+         "path" : "textures/trims/wayfinder.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/emerald.png"
+      },
+      {
+         "path" : "textures/trims/snout_leggings.png"
+      },
+      {
+         "path" : "textures/trims/ward.png"
+      },
+      {
+         "path" : "textures/ui/strength_effect.png"
+      },
+      {
+         "path" : "textures/trims/vex_leggings.png"
+      },
+      {
+         "path" : "textures/trims/tide_leggings.png"
+      },
+      {
+         "path" : "textures/ui/tab_icon.png"
+      },
+      {
+         "path" : "textures/colormap/grass.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_turtleMaster.png"
+      },
+      {
+         "path" : "textures/trims/dune.png"
+      },
+      {
+         "path" : "textures/trims/snout.png"
+      },
+      {
+         "path" : "textures/ui/jump_boost_effect.png"
+      },
+      {
+         "path" : "textures/models/armor/turtle_1.png"
+      },
+      {
+         "path" : "textures/trims/shaper.png"
+      },
+      {
+         "path" : "textures/trims/sentry.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_invisibility.png"
+      },
+      {
+         "path" : "textures/trims/rib_leggings.png"
+      },
+      {
+         "path" : "textures/trims/raiser_leggings.png"
+      },
+      {
+         "path" : "textures/blocks/water_still_grey.png"
+      },
+      {
+         "path" : "textures/trims/raiser.png"
+      },
+      {
+         "path" : "attachables/diamond_boots.player.json"
+      },
+      {
+         "path" : "attachables/netherite_boots.json"
+      },
+      {
+         "path" : "textures/trims/items/chestplate_trim.png"
+      },
+      {
+         "path" : "textures/trims/host.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_invisibility.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_swift.png"
+      },
+      {
+         "path" : "textures/trims/eye_leggings.png"
+      },
+      {
+         "path" : "textures/trims/tide.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/amethyst.png"
+      },
+      {
+         "path" : "textures/misc/watercolor.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/trim_palette.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/quartz.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/iron.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/diamond.png"
+      },
+      {
+         "path" : "textures/trims/coast_leggings.png"
+      },
+      {
+         "path" : "textures/particle/particles.png"
+      },
+      {
+         "path" : "textures/trims/items/boots_trim.png"
+      },
+      {
+         "path" : "attachables/chainmail_leggings.json"
+      },
+      {
+         "path" : "textures/trims/eye.png"
+      },
+      {
+         "path" : "textures/trims/coast.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_slowFall.png"
+      },
+      {
+         "path" : "textures/misc/grasscolor.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_waterbreathing.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_strength.png"
+      },
+      {
+         "path" : "attachables/diamond_leggings.json"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_slowfalling.png"
+      },
+      {
+         "path" : "textures/ui/hunger_effect.png"
+      },
+      {
+         "path" : "textures/trims/host_leggings.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/netherite.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_slow.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_moveSpeed.png"
+      },
+      {
+         "path" : "textures/misc/foliagecolor.png"
+      },
+      {
+         "path" : "textures/ui/speed_effect.png"
+      },
+      {
+         "path" : "textures/ui/resistance_effect.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_poison.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_invisibility.png"
+      },
+      {
+         "path" : "textures/trims/sentry_leggings.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_leaping.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_harm.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_waterBreathing.png"
+      },
+      {
+         "path" : "textures/trims/ward_leggings.png"
+      },
+      {
+         "path" : "particles/portal_directional.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_weakness.png"
+      },
+      {
+         "path" : "particles/dragon_breath_fire.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_turtleMaster.png"
+      },
+      {
+         "path" : "textures/trims/spire_leggings.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/gold_darker.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_weakness.png"
+      },
+      {
+         "path" : "textures/trims/silence_leggings.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_resistance.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_regeneration.png"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_poison.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_moveSpeed.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_moveSlowdown.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_heal.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_fireResistance.png"
+      },
+      {
+         "path" : "textures/trims/shaper_leggings.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_waterBreathing.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_damageBoost.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/diamond_darker.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_slowFall.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_moveSlowdown.png"
+      },
+      {
+         "path" : "textures/ui/up_icon.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/redstone.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_turtleMaster.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_slowFall.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_resistance.png"
+      },
+      {
+         "path" : "attachables/iron_boots.json"
+      },
+      {
+         "path" : "ui/trade_2_screen.json"
+      },
+      {
+         "path" : "textures/item_texture.json"
+      },
+      {
+         "path" : "ui/_global_variables.json"
+      },
+      {
+         "path" : "particles/portal_north_south.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_regeneration.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_poison.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_poison.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_jump.png"
+      },
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_wither.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_nightVision.png"
+      },
+      {
+         "path" : "attachables/diamond_helmet.player.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_heal.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_jump.png"
+      },
+      {
+         "path" : "textures/ui/weakness_effect.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_waterBreathing.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/copper.png"
+      },
+      {
+         "path" : "particles/enchanting_table_particle.json"
+      },
+      {
+         "path" : "textures/items/menu.png"
+      },
+      {
+         "path" : "textures/trims/rib.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_moveSpeed.png"
+      },
+      {
+         "path" : "textures/colormap/birch.png"
+      },
+      {
+         "path" : "particles/end_chest.json"
+      },
+      {
+         "path" : "textures/trims/items/leggings_trim.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_harm.png"
+      },
+      {
+         "path" : "textures/ui/levitation_effect.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_regen.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/gold.png"
+      },
+      {
+         "path" : "attachables/golden_helmet.json"
+      },
+      {
+         "path" : "particles/portal_reverse.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_weakness.png"
+      },
+      {
+         "path" : "textures/blocks/water_flow_grey.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_fireres.png"
+      },
+      {
+         "path" : "textures/blocks/leaves_birch_opaque.png"
+      },
+      {
+         "path" : "textures/trims/dune_leggings.png"
+      },
+      {
+         "path" : "textures/trims/wild.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_fireResistance.png"
+      },
+      {
+         "path" : "attachables/chainmail_chestplate.json"
+      },
+      {
+         "path" : "textures/blocks/leaves_birch_carried.tga"
+      },
+      {
+         "path" : "particles/campfire_smoke_tall.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_regeneration.png"
+      },
+      {
+         "path" : "attachables/iron_chestplate.json"
+      },
+      {
+         "path" : "texts/en_US.lang"
+      },
+      {
+         "path" : "attachables/golden_leggings.json"
+      },
+      {
+         "path" : "render_controllers/custom.armor.render_controllers.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_damageBoost.png"
+      },
+      {
+         "path" : "particles/dragon_breath_trail.json"
+      },
+      {
+         "path" : "textures/trims/color_palettes/lapis.png"
+      },
+      {
+         "path" : "attachables/golden_chestplate.player.json"
+      },
+      {
+         "path" : "textures/gui/icons.png"
+      },
+      {
+         "path" : "textures/blocks/leaves_birch.tga"
+      },
+      {
+         "path" : "textures/trims/color_palettes/iron_darker.png"
+      },
+      {
+         "path" : "textures/trims/color_palettes/netherite_darker.png"
+      },
+      {
+         "path" : "particles/mobspell.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_harm.png"
+      },
+      {
+         "path" : "particles/dragon_breath_lingering.json"
+      },
+      {
+         "path" : "attachables/chainmail_leggings.player.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_invisibility.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_moveSlowdown.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_wither.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_harm.png"
+      },
+      {
+         "path" : "textures/trims/items/helmet_trim.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_nightvision.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_damageBoost.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_nightVision.png"
+      },
+      {
+         "path" : "attachables/diamond_helmet.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_fireResistance.png"
+      },
+      {
+         "path" : "textures/environment/weather.png"
+      },
+      {
+         "path" : "attachables/diamond_chestplate.json"
+      },
+      {
+         "path" : "attachables/turtle_shell_helmet.player.json"
+      },
+      {
+         "path" : "particles/campfire_smoke.json"
+      },
+      {
+         "path" : "attachables/chainmail_helmet.json"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_weakness.png"
+      },
+      {
+         "path" : "particles/basic_portal.json"
+      },
+      {
+         "path" : "pack_icon.png"
+      },
+      {
+         "path" : "attachables/netherite_helmet.json"
+      },
+      {
+         "path" : "attachables/netherite_leggings.player.json"
+      },
+      {
+         "path" : "attachables/diamond_boots.json"
+      },
+      {
+         "path" : "attachables/golden_chestplate.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_lingering_wither.png"
+      },
+      {
+         "path" : "attachables/netherite_leggings.json"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_healing.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_nightVision.png"
+      },
+      {
+         "path" : "attachables/netherite_chestplate.player.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_resistance.png"
+      },
+      {
+         "path" : "attachables/netherite_chestplate.json"
+      },
+      {
+         "path" : "attachables/chainmail_chestplate.player.json"
+      },
+      {
+         "path" : "textures/enchanted_item_glint.png"
+      },
+      {
+         "path" : "textures/items/potion_bottle_splash_jump.png"
+      },
+      {
+         "path" : "attachables/turtle_shell_helmet.json"
+      },
+      {
+         "path" : "textures/ui/slowness_effect.png"
+      },
+      {
+         "path" : "attachables/netherite_boots.player.json"
+      },
+      {
+         "path" : "attachables/iron_leggings.json"
+      },
+      {
+         "path" : "attachables/iron_leggings.player.json"
+      },
+      {
+         "path" : "textures/trims/wayfinder_leggings.png"
+      },
+      {
+         "path" : "attachables/iron_helmet.json"
+      },
+      {
+         "path" : "attachables/iron_chestplate.player.json"
+      },
+      {
+         "path" : "textures/trims/spire.png"
+      },
+      {
+         "path" : "particles/portal_east_west.json"
+      },
+      {
+         "path" : "textures/ui/item_lock_yellow.png"
+      },
+      {
+         "path" : "attachables/golden_leggings.player.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_wither.png"
+      },
+      {
+         "path" : "attachables/chainmail_boots.json"
+      },
+      {
+         "path" : "attachables/golden_boots.json"
+      },
+      {
+         "path" : "attachables/chainmail_helmet.player.json"
+      },
+      {
+         "path" : "attachables/golden_helmet.player.json"
+      },
+      {
+         "path" : "attachables/golden_boots.player.json"
+      },
+      {
+         "path" : "textures/ui/absorption_effect.png"
+      },
+      {
+         "path" : "textures/items/tipped_arrow_turtlemaster.png"
+      },
+      {
+         "path" : "attachables/iron_helmet.player.json"
+      },
+      {
+         "path" : "attachables/diamond_leggings.player.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_heal.png"
+      },
+      {
+         "path" : "textures/ui/water_breathing_effect.png"
+      },
+      {
+         "path" : "textures/trims/vex.png"
+      },
+      {
+         "path" : "attachables/chainmail_boots.player.json"
+      },
+      {
+         "path" : "attachables/diamond_chestplate.player.json"
+      },
+      {
+         "path" : "textures/trims/silence.png"
+      },
+      {
+         "path" : "materials/entity.material"
+      },
+      {
+         "path" : "attachables/netherite_helmet.player.json"
+      },
+      {
+         "path" : "attachables/iron_boots.player.json"
+      }
+   ],
+   "version" : 1
+}

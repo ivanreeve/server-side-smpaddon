@@ -1,0 +1,92 @@
+{
+   "content" : [
+      {
+         "path" : "pack_icon.png"
+      },
+      {
+         "path" : "recipes/furnace_gunpowder.json"
+      },
+      {
+         "path" : "loot_tables/entities/zombie_pigman.json"
+      },
+      {
+         "path" : "loot_tables/entities/zombie.json"
+      },
+      {
+         "path" : "loot_tables/entities/mooshroom.json"
+      },
+      {
+         "path" : "loot_tables/entities/pig.json"
+      },
+      {
+         "path" : "entities/armor_stand.json"
+      },
+      {
+         "path" : "loot_tables/entities/piglin_barter.json"
+      },
+      {
+         "path" : "loot_tables/entities/cow.json"
+      },
+      {
+         "path" : "entities/dummy.json"
+      },
+      {
+         "path" : "items/menu.json"
+      },
+      {
+         "path" : "entities/ender_dragon.json"
+      },
+      {
+         "path" : "functions/global.mcfunction"
+      },
+      {
+         "path" : "trading/economy_trades/wandering_trader_trades.json"
+      },
+      {
+         "path" : "dialogue/menu.json"
+      },
+      {
+         "path" : "loot_tables/entities/enderdragon_drop.json"
+      },
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "entities/wandering_trader.json"
+      },
+      {
+         "path" : "entities/player.json"
+      },
+      {
+         "path" : "entities/wither.json"
+      },
+      {
+         "path" : "entities/npc.json"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "entities/command_block_minecart.json"
+      },
+      {
+         "path" : "loot_tables/entities/chicken.json"
+      },
+      {
+         "path" : "loot_tables/entities/sheep.json"
+      },
+      {
+         "path" : "entities/zombie_pigman.json"
+      },
+      {
+         "path" : "entities/piglin.json"
+      },
+      {
+         "path" : "functions/cleardrop.mcfunction"
+      },
+      {
+         "path" : "animations/exp_regen.json"
+      }
+   ],
+   "version" : 1
+}

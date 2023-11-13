@@ -1,0 +1,33 @@
+{
+	"namespace":"hud",
+	"vignette_renderer": {
+		"type": "custom",
+		"renderer": "ui_holo_cursor",
+		"layer": 5
+	},
+	"item_name_text_root/item_text_aligner/interact_padding": {
+    "visible": "$show_survival_padding",
+    "size": [ "100%sm", "100%c" ],
+    "bindings": [
+      {
+        "binding_name": "#is_not_creative_mode",
+        "binding_name_override": "visible",
+        "binding_condition": "none"
+      }
+    ],
+    "controls": [
+      {
+        "interact_padding@common.empty_panel": {
+          "visible": "$show_interact_padding",
+          "size": [ "100%sm", "100%c" ],
+          "bindings": [
+            {
+              "binding_name": "#interact_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "foxengine:menu",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "menu"
+      },
+      "minecraft:display_name": {
+        "value": "\u00a7eMenu \u00a77[Use]"
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "open_menu"
+        }
+      }
+    },
+    "events": {
+    	"open_menu": {
+    		"run_command": {
+    			"command": [
+    				"dialogue open @s @s menu:main"
+  				]
+    		}
+    	}
+    }
+  }
+}

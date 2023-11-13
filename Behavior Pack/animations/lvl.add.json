@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "animations": {
+    "animation.player.lvl.add": {
+      "loop": true,
+      "animation_length": 120.1,
+      "timeline": {
+        "120.0": [
+          "/xp 1L @s[lm=0,l=19]"
+        ]
+      }
+    }
+  }
+}
