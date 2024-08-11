@@ -1,2 +1,2 @@
-# server-packs
- Server-side resource and behavior packs for Bedrock Dedicated Server (BDS) customizations.
+# Shop Creator
+ Shop wrapper for MCBE scripting API
