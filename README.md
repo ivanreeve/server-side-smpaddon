@@ -1,2 +1,1 @@
-# Shop Creator
- Shop wrapper for MCBE scripting API
+Backend for my MCBE SMP Server. Features custom control panel I made using the official Scripting API.
