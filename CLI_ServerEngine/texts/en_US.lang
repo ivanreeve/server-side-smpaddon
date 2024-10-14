@@ -1,0 +1,6 @@
+chat.type.sleeping=%s §gwent to bed. Sweet Dreams!
+map.position=§aX: %s §eY: %s §bZ: %s
+action.hint.exit.server:private_jet=Look upward to fly and look downward to go down
+action.hint.exit.server:helicopter=Look upward to fly and look downward to go down
+action.hint.exit.server:small_plane=Look upward to fly and look downward to go down
+action.hint.exit.server:seaplane=Look upward to fly and look downward to go down

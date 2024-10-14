@@ -1,0 +1,33 @@
+{
+    "vehicles.null": {
+        "category": "block",
+        "sounds": []
+    },
+    "vehicles.plane_engine": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "sounds/vehicles/plane_engine",
+                "load_on_low_memory": true
+            }
+        ]
+    },
+    "vehicles.helicopter_propeller": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "sounds/vehicles/helicopter_propeller",
+                "load_on_low_memory": true
+            }
+        ]
+    },
+    "vehicles.plane_propeller": {
+        "category": "block",
+        "sounds": [
+            {
+                "name": "sounds/vehicles/plane_propeller",
+                "load_on_low_memory": true
+            }
+        ]
+    }
+}

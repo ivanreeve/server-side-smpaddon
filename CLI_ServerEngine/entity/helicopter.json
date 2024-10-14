@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "server:helicopter",
+		"materials": { "default": "cat" },
+		"textures": {
+		  "gray": "textures/entity/helicopter/gray",
+		  "white": "textures/entity/helicopter/white",
+		  "blue": "textures/entity/helicopter/blue",
+		  "red": "textures/entity/helicopter/red",
+		  "yellow": "textures/entity/helicopter/yellow"
+		},
+		"geometry": {
+		  "default": "geometry.helicopter"
+		},
+		"animations": {
+		  "fly": "animation.helicopter.fly",
+		  "land": "animation.helicopter.land"
+		},
+		"animation_controllers": [
+		  { "move": "controller.animation.helicopter.move" }
+		],
+		"render_controllers": [ "controller.render.helicopter" ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "server:menu",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "menu"
+      },
+      "minecraft:display_name": {
+        "value": "\u00a7dMenu \u00a77[Use]"
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": ""
+        }
+      }
+    }
+  }
+}

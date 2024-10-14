@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.helicopter.land": {
+			"loop": true,
+			"bones": {
+				"bone2": {
+					"rotation": [0, -5, 0]
+				},
+				"bone3": {
+					"rotation": [5, 0, 0]
+				}
+			}
+		},
+		"animation.helicopter.fly": {
+			"loop": true,
+			"animation_length": 0.24,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"0.0": [0, -5, 0],
+						"0.2333": [0, 355, 0]
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.1167": [-355, 0, 0],
+						"0.2333": [-715, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.private_jet.fly": {
+			"loop": true,
+			"bones": {
+				"wheel1": {
+					"rotation": [85, 0, 0]
+				},
+				"wheel2": {
+					"rotation": [85, 0, 0]
+				},
+				"wheel3": {
+					"rotation": [85, 0, 0]
+				}
+			}
+		},
+		"animation.private_jet.land": {
+			"loop": true,
+			"bones": {
+				"wheel1": {
+					"position": [0, -2, 0]
+				},
+				"wheel2": {
+					"position": [0, -2, 0]
+				},
+				"wheel3": {
+					"position": [0, -2, 0]
+				}
+			}
+		}
+	}
+}

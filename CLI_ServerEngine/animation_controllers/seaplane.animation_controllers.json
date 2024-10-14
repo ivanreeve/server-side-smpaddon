@@ -1,0 +1,34 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.seaplane.move": {
+			"initial_state": "walking",
+			"states": {
+				"flying": {
+					"animations": [
+						"fly"
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"walking": "query.has_rider == 0"
+						}
+					]
+				},
+				"walking": {
+					"animations": [
+						"land"
+					],
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"flying": "query.has_rider == 1"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.small_plane.fly": {
+			"loop": true,
+			"animation_length": 0.12,
+			"bones": {
+				"propeller": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1167": [0, 0, 360]
+					}
+				}
+			}
+		},
+		"animation.small_plane.land": {
+			"loop": true,
+			"bones": {
+				"propeller": {
+					"rotation": [0, 0, -45]
+				}
+			}
+		}
+	}
+}

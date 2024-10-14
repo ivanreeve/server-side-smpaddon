@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "server:private_jet",
+      "materials": { "default": "cat" },
+      "textures": {
+        "red": "textures/entity/private_jet/red",
+        "blue": "textures/entity/private_jet/blue",
+        "gray": "textures/entity/private_jet/gray",
+        "green": "textures/entity/private_jet/green"
+      },
+      "geometry": {
+        "default": "geometry.private_jet"
+      },
+      "animations": {
+        "fly": "animation.private_jet.fly",
+        "land": "animation.private_jet.land"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.private_jet.move" }
+      ],
+      "render_controllers": [ "controller.render.private_jet" ]
+    }
+  }
+}

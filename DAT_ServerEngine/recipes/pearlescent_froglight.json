@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:pearlescent_froglight"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "SM",
+      "GD",
+      ""
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:slime_ball"
+      },
+      "M": {
+        "item": "minecraft:magma_cream"
+      },
+      "G": {
+        "item": "minecraft:glowstone_dust"
+      },
+      "D": {
+        "item": "minecraft:magenta_dye"
+      }
+    },
+    "result": {
+      "item": "minecraft:pearlescent_froglight",
+      "count": 4
+    }
+  }
+}

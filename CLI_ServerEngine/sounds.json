@@ -1,0 +1,46 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"server:helicopter": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": "vehicles.null"
+				}
+			},
+			"server:private_jet": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": "vehicles.null"
+				}
+			},
+			"server:seaplane": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": "vehicles.null"
+				}
+			},
+			"server:small_plane": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": "vehicles.null"
+				}
+			}
+		}
+	}
+}

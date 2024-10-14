@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "server:seaplane",
+		"materials": { "default": "cat" },
+		"textures": {
+		  "yellow": "textures/entity/seaplane/yellow",
+		  "red": "textures/entity/seaplane/red",
+		  "gray": "textures/entity/seaplane/gray",
+		  "blue": "textures/entity/seaplane/blue"
+		},
+		"geometry": {
+		  "default": "geometry.seaplane"
+		},
+		"animations": {
+		  "fly": "animation.seaplane.fly",
+		  "land": "animation.seaplane.land"
+		},
+		"animation_controllers": [
+		  { "move": "controller.animation.seaplane.move" }
+		],
+		"render_controllers": [ "controller.render.seaplane" ]
+	  }
+	}
+}

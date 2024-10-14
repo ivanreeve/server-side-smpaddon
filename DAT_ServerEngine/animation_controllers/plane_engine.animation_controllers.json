@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.plane_engine": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"flying": "(1.0)"
+						}
+					],
+					"on_entry": [
+						"/playsound vehicles.plane_engine @a ~ ~ ~ 0.01"
+					]
+				},
+				"flying": {
+					"transitions": [
+						{
+							"default": "query.has_rider"
+						}
+					],
+					"on_entry": [
+						"/playsound vehicles.plane_engine @a ~ ~ ~ 0.01"
+					]
+				}
+			}
+		}
+	}
+}

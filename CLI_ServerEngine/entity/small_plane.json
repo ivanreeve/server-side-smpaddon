@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+	  "description": {
+		"identifier": "server:small_plane",
+		"materials": { "default": "cat" },
+		"textures": {
+		  "green": "textures/entity/small_plane/green",
+		  "purple": "textures/entity/small_plane/purple",
+		  "blue": "textures/entity/small_plane/blue",
+		  "red": "textures/entity/small_plane/red",
+		  "gray": "textures/entity/small_plane/gray",
+		  "yellow": "textures/entity/small_plane/yellow"
+		},
+		"geometry": {
+		  "default": "geometry.small_plane"
+		},
+		"animations": {
+		  "fly": "animation.small_plane.fly",
+		  "land": "animation.small_plane.land"
+		},
+		"animation_controllers": [
+		  { "move": "controller.animation.small_plane.move" }
+		],
+		"render_controllers": [ "controller.render.small_plane" ]
+	  }
+	}
+}
