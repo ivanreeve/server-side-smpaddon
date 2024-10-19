@@ -1,6 +1,6 @@
 # Bedrock SMP Server Resource and Behavior Packs
 
-This repository contains the source code of the shop I made using Minecraft: Bedrock Edition Official Scripting API.
+This repository contains the source code of the shop I made using the Minecraft: Bedrock Edition official scripting API.
 
 ## Screenshots
 
