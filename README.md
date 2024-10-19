@@ -2,7 +2,7 @@
 
 This repository contains the source code of the shop I made using the Minecraft: Bedrock Edition official scripting API.
 
-Currently supported versions are 1.20.x and below.
+Due to the active development of the API, breaking changes are frequent. Currently supported versions are 1.20.x and below.
 
 ## Screenshots
 
